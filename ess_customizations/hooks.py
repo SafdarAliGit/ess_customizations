@@ -137,13 +137,11 @@ doctype_js = {"Visit" : "public/js/visit.js"}
 # ---------------
 # Hook on document methods and events
 
-# doc_events = {
-# 	"*": {
-# 		"on_update": "method",
-# 		"on_cancel": "method",
-# 		"on_trash": "method"
-# 	}
-# }
+doc_events = {
+	"Visit": {
+		"after_insert": "ess_customizations.events.set_location_address.set_location_address",
+	}
+}
 
 # Scheduled Tasks
 # ---------------
