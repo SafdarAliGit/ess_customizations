@@ -81,7 +81,7 @@ frappe.ui.form.on('Visit', {
                 overlay.innerHTML = `
                     <div style="display:flex;align-items:flex-start;gap:8px;">
                         <span style="margin-top:5px;flex-shrink:0;width:7px;height:7px;border-radius:50%;background:var(--primary,#5e64ff);box-shadow:0 0 8px rgba(94,100,255,0.5);display:inline-block;"></span>
-                        <span style="word-break:break-word;">${frappe.utils.escape_html(log_location.trim())}</span>
+                        <span style="word-break:break-word;">${frappe.utils.escape_html(description.trim())}</span>
                     </div>
                 `;
                 mapContainer.style.position = 'relative';
